@@ -9,7 +9,7 @@ namespace LibTest
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual(3, EasySumDemo.EasySum(1, 2));
+            Assert.AreEqual(3, EasySumDemo.Execte(1, 2));
         }
     }
 }
