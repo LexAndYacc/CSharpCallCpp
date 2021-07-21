@@ -9,14 +9,28 @@ extern "C" __declspec(dllexport) int __stdcall EasySum(int a, int b)
 #pragma endregion
 
 #pragma region ArraySum
-extern "C" __declspec(dllexport) int __stdcall ArraySum(int* arr,int size)
+extern "C" __declspec(dllexport) int __stdcall ArraySum(int* arr, int size)
 {
 	int sum = 0;
-	
+
 	for (int i = 0; i < size; i++) {
 		sum += arr[i];
 	}
 
 	return sum;
+}
+#pragma endregion
+
+#pragma region StructSum
+struct SumOfTwoNumbers {
+	int a;
+	int b;
+	int result;
+};
+
+extern "C" __declspec(dllexport) bool __stdcall StructSum(SumOfTwoNumbers & sumOfTwoNumbers)
+{
+	sumOfTwoNumbers.result = sumOfTwoNumbers.a + sumOfTwoNumbers.b;
+	return true;
 }
 #pragma endregion
