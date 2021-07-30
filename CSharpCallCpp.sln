@@ -16,6 +16,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibTest", "LibTest\LibTest.
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpDemo", "CSharpDemo\CSharpDemo.csproj", "{ECFA3D6B-327E-4EFB-B8E0-E7B8B90E49F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAB344BF-6FDB-47C1-9A60-F2DD17572570} = {DAB344BF-6FDB-47C1-9A60-F2DD17572570}
+		{B702EAEA-B381-4FC9-8E42-855F7607B6CC} = {B702EAEA-B381-4FC9-8E42-855F7607B6CC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

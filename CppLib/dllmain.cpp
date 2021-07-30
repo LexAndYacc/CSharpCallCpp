@@ -34,3 +34,14 @@ extern "C" __declspec(dllexport) bool __stdcall StructSum(SumOfTwoNumbers & sumO
 	return true;
 }
 #pragma endregion
+
+#pragma region StructsSum
+extern "C" __declspec(dllexport) bool __stdcall StructsSum(SumOfTwoNumbers * sumOfTwoNumbers, int size)
+{
+
+	for (int i = 0; i < size; i++) {
+		sumOfTwoNumbers[i].result = sumOfTwoNumbers[i].a + sumOfTwoNumbers[i].b;
+	}
+	return true;
+}
+#pragma endregion
